@@ -5,10 +5,103 @@ import java.util.Scanner;
 
 public class Adding extends Contact{
 
-    public static void main(String[] args) {
-        System.out.println("Welcome to Address book");
+    public void Add(){
+        Scanner sc = new Scanner(System.in);
 
-        Contact obj = new Contact();
+        System.out.println("Enter the First name");
+        String Str1 = sc.next();
+        FirstName.add(Str1);
+
+        System.out.println("Enter the last name");
+        String Str2 = sc.next();
+        LastName.add(Str2);
+
+        System.out.println("Enter the Address");
+        String Str3 = sc.next();
+        Address.add(Str3);
+
+        System.out.println("Enter the city");
+        String Str4 = sc.next();
+        City.add(Str4);
+
+        System.out.println("Enter the state");
+        String Str5 = sc.next();
+        state.add(Str5);
+
+        System.out.println("Enter the zip");
+        String Str6 = sc.next();
+        Zip.add(Str6);
+
+        System.out.println("Enter the Phone Number");
+        String Str7 = sc.next();
+        PhoneNuber.add(Str7);
+
+        System.out.println("Enter the email");
+        String Str8 = sc.next();
+        email.add(Str8);
+
+    }
+
+    public void Sub(int r){
+
+        FirstName.remove(r);
+
+        LastName.remove(r);
+
+        Address.remove(r);
+
+        City.remove(r);
+
+        state.remove(r);
+
+        Zip.remove(r);
+
+        PhoneNuber.remove(r);
+
+        email.remove(r);
+    }
+
+    public void Edit(int e){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the first name");
+        String Str9 = sc.nextLine();
+        FirstName.add(e,Str9);
+
+        System.out.println("Enter the last name");
+        String Str91 = sc.nextLine();
+        LastName.add(e,Str91);
+
+        System.out.println("Enter the address");
+        String Str92 = sc.nextLine();
+        Address.add(e,Str92);
+
+        System.out.println("Enter the City");
+        String Str93 = sc.nextLine();
+        City.add(e,Str93);
+
+        System.out.println("Enter the state");
+        String Str94 = sc.nextLine();
+        state.add(e,Str94);
+
+        System.out.println("Enter the Zip");
+        String Str95 = sc.nextLine();
+        Zip.add(e,Str95);
+
+        System.out.println("Enter the phone number");
+        String Str96 = sc.nextLine();
+        PhoneNuber.add(e,Str96);
+
+        System.out.println("Enter the email");
+        String Str97 = sc.nextLine();
+        email.add(e,Str97);
+
+    }
+
+    public static void main(String[] args) {
+
+        /*Contact obj = new Contact();
         obj.FirstName = new ArrayList<>();
         obj.LastName = new ArrayList<>();
         obj.Address = new ArrayList<>();
@@ -17,59 +110,6 @@ public class Adding extends Contact{
         obj.Zip = new ArrayList<>();
         obj.PhoneNuber = new ArrayList<>();
         obj.email = new ArrayList<>();
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number of contact you want to add");
-        int a = sc.nextInt();
-
-        for (int i = 0; i<a; i++){
-            System.out.println("Enter the First name");
-            String Str1 = sc.next();
-            FirstName.add(Str1);
-
-            System.out.println("Enter the last name");
-            String Str2 = sc.next();
-            LastName.add(Str2);
-
-            System.out.println("Enter the Address");
-            String Str3 = sc.next();
-            Address.add(Str3);
-
-            System.out.println("Enter the city");
-            String Str4 = sc.next();
-            City.add(Str4);
-
-            System.out.println("Enter the state");
-            String Str5 = sc.next();
-            state.add(Str5);
-
-            System.out.println("Enter the zip");
-            String Str6 = sc.next();
-            Zip.add(Str6);
-
-            System.out.println("Enter the Phone Number");
-            String Str7 = sc.next();
-            PhoneNuber.add(Str7);
-
-            System.out.println("Enter the email");
-            String Str8 = sc.next();
-            email.add(Str8);
-
-        }
-
-        System.out.println(FirstName);
-        //String st19 = FirstName.get(0);
-        //System.out.println(st19);
-        for (int j = 0; j < a; j++) {
-            System.out.println(FirstName.get(j));
-            System.out.println(LastName.get(j));
-            System.out.println(Address.get(j));
-            System.out.println(City.get(j));
-            System.out.println(state.get(j));
-            System.out.println(Zip.get(j));
-            System.out.println(PhoneNuber.get(j));
-            System.out.println(email.get(j));
-            System.out.println("------------------------------------");
-        }
+*/
     }
 }
