@@ -22,6 +22,7 @@ public class AddressBookMain extends Adding {
         while (exit == 8) {
             System.out.println("Please enter the following details: ");
             System.out.println("1. Add");
+            System.out.println("2. Remove");
             System.out.println("3. Edit");
             System.out.println("4. display");
             System.out.println("5. Exit");
@@ -34,7 +35,21 @@ public class AddressBookMain extends Adding {
 
             if (inp == 1) {
                 ob4.Add();
-            }  else if (inp == 3) {
+            } else if (inp == 2) {
+
+                System.out.println("Enter the first name you want to remove");
+                Scanner in1 = new Scanner(System.in);
+                String sp1 = in1.nextLine();
+
+                if (ob5.FirstName.contains(sp1)) {
+                    int v1 = ob5.FirstName.indexOf(sp1);
+
+                    ob4.Sub(v1);
+                } else {
+                    System.out.println("The name does not exist");
+                }
+
+            } else if (inp == 3) {
                 System.out.println("Enter the name you want to edit");
                 Scanner in2 = new Scanner(System.in);
                 String sp2 = in2.nextLine();
@@ -69,7 +84,7 @@ public class AddressBookMain extends Adding {
                     System.out.println("The name does not exist");
                 }
 
-            } else if (exit == 5) {
+            } else if (inp == 5) {
                 exit = 9;
             } else {
                 System.out.println("Enter the velid input");
