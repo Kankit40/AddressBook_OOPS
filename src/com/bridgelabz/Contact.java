@@ -44,4 +44,3 @@ public class Contact {
         this.email = new ArrayList<>();
     }
 }
-
