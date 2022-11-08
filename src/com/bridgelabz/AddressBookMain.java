@@ -84,7 +84,7 @@ public class AddressBookMain extends Adding {
                     System.out.println("The name does not exist");
                 }
 
-            } else if (exit == 5) {
+            } else if (inp == 5) {
                 exit = 9;
             } else {
                 System.out.println("Enter the velid input");
