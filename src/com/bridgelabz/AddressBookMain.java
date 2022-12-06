@@ -78,7 +78,7 @@ public class AddressBookMain extends Adding {
                     System.out.println("The City is " + City.get(v3));
                     System.out.println("The state is " + state.get(v3));
                     System.out.println("The Zip is " + Zip.get(v3));
-                    System.out.println("The PhoneNuber is " + PhoneNuber.get(v3));
+                    System.out.println("The PhoneNumber is " + PhoneNuber.get(v3));
                     System.out.println("The email is " + email.get(v3));
                 } else {
                     System.out.println("The name does not exist");
@@ -87,7 +87,7 @@ public class AddressBookMain extends Adding {
             } else if (inp == 5) {
                 exit = 9;
             } else {
-                System.out.println("Enter the velid input");
+                System.out.println("Enter the valid input");
             }
 
         }
