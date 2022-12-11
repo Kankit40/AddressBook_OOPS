@@ -1,46 +1,37 @@
 package com.bridgelabz;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.Scanner;
 
 public class Contact {
-    static ArrayList<String > FirstName;
-    static ArrayList<String > LastName;
-    static ArrayList<String> Address;
-    static ArrayList<String> City;
-    static ArrayList<String > state;
-    static ArrayList<String > Zip;
-    static ArrayList<String > PhoneNuber;
-    static ArrayList<String > email;
 
-    void One (){
-        this.FirstName = new ArrayList<>();
+    static ArrayList<String > Slot1 = new ArrayList<>();
+    static ArrayList<String > Slot2 = new ArrayList<>();
+    static ArrayList<String> Slot3 = new ArrayList<>();
+    static ArrayList<String> Slot4 = new ArrayList<>();
+    static ArrayList<String > Slot5 = new ArrayList<>();
+
+
+    /*void One (){
+        this.Slot1 = new ArrayList<>();
     }
 
     void Two (){
-        this.LastName = new ArrayList<>();
+        this.Slot2 = new ArrayList<>();
     }
 
     void Three (){
-        this.Address = new ArrayList<>();
+        this.Slot3 = new ArrayList<>();
     }
 
     void Five (){
-        this.state = new ArrayList<>();
+        this.Slot4 = new ArrayList<>();
     }
 
     void Four (){
-        this.City = new ArrayList<>();
-    }
+        this.Slot5 = new ArrayList<>();
+    }*/
 
-    void Six (){
-        this.Zip = new ArrayList<>();
-    }
-
-    void Seven (){
-        this.PhoneNuber = new ArrayList<>();
-    }
-
-    void Eight (){
-        this.email = new ArrayList<>();
-    }
 }
