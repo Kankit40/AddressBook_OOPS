@@ -338,6 +338,12 @@ public class Feature extends Contact{
     }
 
     public void PersonInCity(){
+        int count1 = 0;
+        int count2 = 0;
+        int count3 = 0;
+        int count4 = 0;
+        int count5 = 0;
+
         System.out.println("Please enter the following number");
         Scanner sc6 = new Scanner(System.in);
 
@@ -355,8 +361,10 @@ public class Feature extends Contact{
                 System.out.println("The ZIP is " + Slot1.get(i+2));
                 System.out.println("The phone number is " + Slot1.get(i+3));
                 System.out.println("The emal ID is " + Slot1.get(i+4));
+                count1++;
             }
         }
+
         System.out.println("People in AddressBook 2");
         for (int i = 0; i<Slot2.size(); i++){
             if (Slot1.get(i).equals(a1)){
@@ -368,6 +376,7 @@ public class Feature extends Contact{
                 System.out.println("The ZIP is " + Slot2.get(i+2));
                 System.out.println("The phone number is " + Slot2.get(i+3));
                 System.out.println("The emal ID is " + Slot2.get(i+4));
+                count2++;
             }
         }
         System.out.println("People in AddressBook 3");
@@ -381,6 +390,7 @@ public class Feature extends Contact{
                 System.out.println("The ZIP is " + Slot3.get(i+2));
                 System.out.println("The phone number is " + Slot3.get(i+3));
                 System.out.println("The emal ID is " + Slot3.get(i+4));
+                count3++;
             }
         }
         System.out.println("People in AddressBook 4");
@@ -394,6 +404,7 @@ public class Feature extends Contact{
                 System.out.println("The ZIP is " + Slot4.get(i+2));
                 System.out.println("The phone number is " + Slot4.get(i+3));
                 System.out.println("The emal ID is " + Slot4.get(i+4));
+                count4++;
             }
         }
         System.out.println("People in AddressBook 5");
@@ -407,8 +418,15 @@ public class Feature extends Contact{
                 System.out.println("The ZIP is " + Slot5.get(i+2));
                 System.out.println("The phone number is " + Slot5.get(i+3));
                 System.out.println("The emal ID is " + Slot5.get(i+4));
+                count5++;
             }
         }
+
+        System.out.println("The number of people living in the city " + a1 + " in Addressbook 1 are " + count1);
+        System.out.println("The number of people living in the city " + a1 + " in Addressbook 2 are " + count2);
+        System.out.println("The number of people living in the city " + a1 + " in Addressbook 3 are " + count3);
+        System.out.println("The number of people living in the city " + a1 + " in Addressbook 4 are " + count4);
+        System.out.println("The number of people living in the city " + a1 + " in Addressbook 5 are " + count5);
 
     }
 
