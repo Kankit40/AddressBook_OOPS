@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Feature extends Contact{
@@ -132,6 +133,19 @@ public class Feature extends Contact{
         System.out.println("The phone number is " + d.get(e+6));
         System.out.println("The emal ID is " + d.get(e+7));
 
+    }
+
+    public void Display2(String a, ArrayList b){
+        int e = b.indexOf(a);
+
+        System.out.println("The first name is " + b.get(e));
+        System.out.println("The last name is " + b.get(e+1));
+        System.out.println("The Addres is " + b.get(e+2));
+        System.out.println("The city is " + b.get(e+3));
+        System.out.println("The state is " + b.get(e+4));
+        System.out.println("The ZIP is " + b.get(e+5));
+        System.out.println("The phone number is " + b.get(e+6));
+        System.out.println("The emal ID is " + b.get(e+7));
     }
     //Creating Address Book
 
@@ -279,5 +293,47 @@ public class Feature extends Contact{
         }else {
             System.out.println("The Addressbook does not exist");
         }
+    }
+
+    public void LocateAcross(){
+        System.out.println("Please enter the first name you wish to search");
+        Scanner sc5 = new Scanner(System.in);
+        String str8 = sc5.next();
+
+        boolean dup1 = Slot1.stream().anyMatch(e->e.contains(str8));
+        boolean dup2 = Slot2.stream().anyMatch(e->e.contains(str8));
+        boolean dup3 = Slot3.stream().anyMatch(e->e.contains(str8));
+        boolean dup4 = Slot4.stream().anyMatch(e->e.contains(str8));
+        boolean dup5 = Slot5.stream().anyMatch(e->e.contains(str8));
+        //boolean dub1 = Slot1.stream().map(e->e.contains(str8)).collect(Collectors.toList());
+        if (dup1 == true){
+            System.out.println("The addressbook 1 contains ");
+            Display2(str8,Slot1);
+        }else
+            System.out.println(" The Addressbook 1 do not contains");
+
+        if (dup2 == true){
+            System.out.println("The addressbook 2 contains ");
+            Display2(str8,Slot2);
+        }else
+            System.out.println(" The Addressbook 2 do not contains");
+
+        if (dup3 == true){
+            System.out.println("The addressbook 3 contains ");
+            Display2(str8,Slot3);
+        }else
+            System.out.println(" The Addressbook 3 do not contains");
+
+        if (dup4 == true){
+            System.out.println("The addressbook 4 contains ");
+            Display2(str8,Slot4);
+        }else
+            System.out.println(" The Addressbook 4 do not contains");
+
+        if (dup5 == true){
+            System.out.println("The addressbook 5 contains ");
+            Display2(str8,Slot5);
+        }else
+            System.out.println(" The Addressbook 5 do not contains");
     }
 }
