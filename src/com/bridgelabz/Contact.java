@@ -14,24 +14,5 @@ public class Contact {
     static ArrayList<String > Slot5 = new ArrayList<>();
 
 
-    /*void One (){
-        this.Slot1 = new ArrayList<>();
-    }
-
-    void Two (){
-        this.Slot2 = new ArrayList<>();
-    }
-
-    void Three (){
-        this.Slot3 = new ArrayList<>();
-    }
-
-    void Five (){
-        this.Slot4 = new ArrayList<>();
-    }
-
-    void Four (){
-        this.Slot5 = new ArrayList<>();
-    }*/
 
 }
