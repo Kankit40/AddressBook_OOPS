@@ -2,6 +2,9 @@ package com.bridgelabz;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
 
 public class Feature extends Contact{
 
@@ -10,35 +13,41 @@ public class Feature extends Contact{
 
         System.out.println("Enter the First name");
         String Str1 = sc.next();
-        a.add(Str1);
 
-        System.out.println("Enter the last name");
-        String Str2 = sc.next();
-        a.add(Str2);
+        boolean dup = a.stream().anyMatch(e->e.equals(Str1));
+        if (dup == true){
+            System.out.println("The name already exists");
+        }else {
+            a.add(Str1);
 
-        System.out.println("Enter the Address");
-        String Str3 = sc.next();
-        a.add(Str3);
+            System.out.println("Enter the last name");
+            String Str2 = sc.next();
+            a.add(Str2);
 
-        System.out.println("Enter the city");
-        String Str4 = sc.next();
-        a.add(Str4);
+            System.out.println("Enter the Address");
+            String Str3 = sc.next();
+            a.add(Str3);
 
-        System.out.println("Enter the state");
-        String Str5 = sc.next();
-        a.add(Str5);
+            System.out.println("Enter the city");
+            String Str4 = sc.next();
+            a.add(Str4);
 
-        System.out.println("Enter the zip");
-        String Str6 = sc.next();
-        a.add(Str6);
+            System.out.println("Enter the state");
+            String Str5 = sc.next();
+            a.add(Str5);
 
-        System.out.println("Enter the Phone Number");
-        String Str7 = sc.next();
-        a.add(Str7);
+            System.out.println("Enter the zip");
+            String Str6 = sc.next();
+            a.add(Str6);
 
-        System.out.println("Enter the email");
-        String Str8 = sc.next();
-        a.add(Str8);
+            System.out.println("Enter the Phone Number");
+            String Str7 = sc.next();
+            a.add(Str7);
+
+            System.out.println("Enter the email");
+            String Str8 = sc.next();
+            a.add(Str8);
+        }
 
     }
 
@@ -126,41 +135,33 @@ public class Feature extends Contact{
     }
     //Creating Address Book
 
-    public void check(){
+    public void Create(){
         Scanner sc1 = new Scanner(System.in);
         System.out.println("Enter the Name of the AddressBook");
         String inp = sc1.next();
 
         if (Slot1.contains(inp) || Slot2.contains(inp) || Slot3.contains(inp) || Slot4.contains(inp) || Slot5.contains(inp)){
             System.out.println("The name already exists");
-
         }else {
-            System.out.println("The address book is being created");
-        }
 
-    }
-    public void Create(){
-        Scanner sc1 = new Scanner(System.in);
-        System.out.println("Enter the Name of the AddressBook");
-        String inp = sc1.next();
-
-        if (Slot1.size() == 0){
-            Slot1.add(inp);
-           Add(Slot1);
-        } else if (Slot2.size() == 0) {
-            Slot2.add(inp);
-            Add(Slot2);
-        } else if (Slot3.size() == 0) {
-            Slot3.add(inp);
-            Add(Slot3);
-        } else if (Slot4.size() == 0) {
-            Slot4.add(inp);
-            Add(Slot4);
-        } else if (Slot5.size() == 0) {
-            Slot5.add(inp);
-            Add(Slot5);
-        }else {
-            System.out.println("You ran out of memory storage");
+            if (Slot1.size() == 0) {
+                Slot1.add(inp);
+                Add(Slot1);
+            } else if (Slot2.size() == 0) {
+                Slot2.add(inp);
+                Add(Slot2);
+            } else if (Slot3.size() == 0) {
+                Slot3.add(inp);
+                Add(Slot3);
+            } else if (Slot4.size() == 0) {
+                Slot4.add(inp);
+                Add(Slot4);
+            } else if (Slot5.size() == 0) {
+                Slot5.add(inp);
+                Add(Slot5);
+            } else {
+                System.out.println("You ran out of memory storage");
+            }
         }
         System.out.println("The addressbook has been created and the details of first person has been added");
     }
