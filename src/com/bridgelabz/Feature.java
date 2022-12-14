@@ -336,4 +336,81 @@ public class Feature extends Contact{
         }else
             System.out.println(" The Addressbook 5 do not contains");
     }
+
+    public void PersonInCity(){
+        System.out.println("Please enter the following number");
+        Scanner sc6 = new Scanner(System.in);
+
+        System.out.println("1: Please enter City");
+        String a1 = sc6.next();
+
+        System.out.println("People in AddressBook 1");
+        for (int i = 0; i<Slot1.size(); i++){
+            if (Slot1.get(i).equals(a1)){
+                System.out.println("The first name is " + Slot1.get(i-3));
+                System.out.println("The last name is " + Slot1.get(i-2));
+                System.out.println("The Addres is " + Slot1.get(i-1));
+                System.out.println("The city is " + Slot1.get(i));
+                System.out.println("The state is " + Slot1.get(i+1));
+                System.out.println("The ZIP is " + Slot1.get(i+2));
+                System.out.println("The phone number is " + Slot1.get(i+3));
+                System.out.println("The emal ID is " + Slot1.get(i+4));
+            }
+        }
+        System.out.println("People in AddressBook 2");
+        for (int i = 0; i<Slot2.size(); i++){
+            if (Slot1.get(i).equals(a1)){
+                System.out.println("The first name is " + Slot2.get(i-3));
+                System.out.println("The last name is " + Slot2.get(i-2));
+                System.out.println("The Addres is " + Slot2.get(i-1));
+                System.out.println("The city is " + Slot2.get(i));
+                System.out.println("The state is " + Slot2.get(i+1));
+                System.out.println("The ZIP is " + Slot2.get(i+2));
+                System.out.println("The phone number is " + Slot2.get(i+3));
+                System.out.println("The emal ID is " + Slot2.get(i+4));
+            }
+        }
+        System.out.println("People in AddressBook 3");
+        for (int i = 0; i<Slot3.size(); i++){
+            if (Slot1.get(i).equals(a1)){
+                System.out.println("The first name is " + Slot3.get(i-3));
+                System.out.println("The last name is " + Slot3.get(i-2));
+                System.out.println("The Addres is " + Slot3.get(i-1));
+                System.out.println("The city is " + Slot3.get(i));
+                System.out.println("The state is " + Slot3.get(i+1));
+                System.out.println("The ZIP is " + Slot3.get(i+2));
+                System.out.println("The phone number is " + Slot3.get(i+3));
+                System.out.println("The emal ID is " + Slot3.get(i+4));
+            }
+        }
+        System.out.println("People in AddressBook 4");
+        for (int i = 0; i<Slot4.size(); i++){
+            if (Slot1.get(i).equals(a1)){
+                System.out.println("The first name is " + Slot4.get(i-3));
+                System.out.println("The last name is " + Slot4.get(i-2));
+                System.out.println("The Addres is " + Slot4.get(i-1));
+                System.out.println("The city is " + Slot4.get(i));
+                System.out.println("The state is " + Slot4.get(i+1));
+                System.out.println("The ZIP is " + Slot4.get(i+2));
+                System.out.println("The phone number is " + Slot4.get(i+3));
+                System.out.println("The emal ID is " + Slot4.get(i+4));
+            }
+        }
+        System.out.println("People in AddressBook 5");
+        for (int i = 0; i<Slot5.size(); i++){
+            if (Slot1.get(i).equals(a1)){
+                System.out.println("The first name is " + Slot5.get(i-3));
+                System.out.println("The last name is " + Slot5.get(i-2));
+                System.out.println("The Addres is " + Slot5.get(i-1));
+                System.out.println("The city is " + Slot5.get(i));
+                System.out.println("The state is " + Slot5.get(i+1));
+                System.out.println("The ZIP is " + Slot5.get(i+2));
+                System.out.println("The phone number is " + Slot5.get(i+3));
+                System.out.println("The emal ID is " + Slot5.get(i+4));
+            }
+        }
+
+    }
+
+
 }

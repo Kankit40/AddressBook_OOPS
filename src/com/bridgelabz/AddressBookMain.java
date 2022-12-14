@@ -16,7 +16,8 @@ public class AddressBookMain extends Feature {
             System.out.println("2. Edit Addressbook");
             System.out.println("3. Delete Addressbook");
             System.out.println("4: Locate in all Addressbook");
-            System.out.println("5. Exit");
+            System.out.println("5: Locate persons with City");
+            System.out.println("6. Exit");
 
 
             Feature ob4 = new Feature();
@@ -39,6 +40,8 @@ public class AddressBookMain extends Feature {
                 ob4.LocateAcross();
 
             } else if (inp == 5) {
+                ob4.PersonInCity();
+            } else if (inp == 6) {
                 exit = 9;
             } else
                 System.out.println("Enter the valid input");
